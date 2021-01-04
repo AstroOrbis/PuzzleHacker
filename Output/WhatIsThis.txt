@@ -1,0 +1,1 @@
+Basically all of your outputs will be printed in console and logged under the format "[Cypher Type]|[Timestamp].txt"

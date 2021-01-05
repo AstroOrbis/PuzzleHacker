@@ -16,12 +16,10 @@ time.sleep(4)
 
 #Set var PuzzleType
 
-puzzleType = (input("Type the string corresponding to your puzzle, then press enter!!"))
+puzzleType = (
+    input("Type the string corresponding to your puzzle, then press enter!"))
 print(puzzleType)
-time.sleep(2)
+time.sleep(1.5)
 
-print(os.getcwd())
-time.sleep (1.5)
-
-if puzzleType = "Caesar"
-    os.system('python3', os.getcwd(), '/Decrypt/Caesar.py')
+if puzzleType == "Caesar":
+    os.system('cd Decrypt && python3 Caesar.py')

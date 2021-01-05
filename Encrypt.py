@@ -21,4 +21,4 @@ print(puzzleType)
 time.sleep(1.5)
 
 if puzzleType == "Caesar":
-    os.system('python3', os.getcwd(), '/Encrypt/Caesar.py')
+    os.system('cd Encrypt && python3 Caesar.py')

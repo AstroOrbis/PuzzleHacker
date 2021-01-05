@@ -153,5 +153,7 @@ dmypy.json
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,python
 
-#One thing added by me:
+#Added by me:
 .DS_Store
+.vscode
+__pycache__

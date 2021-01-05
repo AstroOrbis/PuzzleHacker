@@ -152,3 +152,6 @@ dmypy.json
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,python
+
+#One thing added by me:
+.DS_Store

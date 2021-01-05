@@ -17,5 +17,5 @@ print("1. Cesarean Cypher")
 
 #input for var PuzzleType
 print("Type the number corresponding to your puzzle, then press enter!!")
-type = input(" ")
-print(type)
+puzzleType = input(" ")
+print(puzzleType)

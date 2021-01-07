@@ -17,7 +17,6 @@ time.sleep(4)
 #Set var PuzzleType
 
 puzzleType = (input("Type the string corresponding to your puzzle, then press enter!"))
-print(puzzleType)
 time.sleep(1.5)
 
 if puzzleType == "Caesar":

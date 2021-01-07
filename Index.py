@@ -16,9 +16,12 @@ time.sleep (1)
 
 #Now to check if they want to Encrypt or Decrypt and send them to the redirection script for the corresponding choice
 print("Would you like to encrypt or decrypt? Respond Encrypt' 'Decrypt'. ")
-EncryptDecrypt = (input(" "))
+EncryptDecrypt = (input("\n"))
 
 if EncryptDecrypt == "Encrypt":
     import Encrypt
-else:
+elif EncryptDecrypt == "Decrypt":
     import Decrypt
+else:
+    print("Invalid awnser - restarting the script.")
+    os.system('python3 Index.py')

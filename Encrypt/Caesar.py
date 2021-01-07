@@ -1,20 +1,32 @@
+#imports
 import time
-n = int(input("Please enter how many times you want the cypher to be shifted: "))
-s = list(input("\nPlease enter your cypher text: "))
-for i in range(len(s)):
-    if s[i] == " ":
-        new = 32
+import os
+
+#the original alphabet
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+#number of shifts
+key = 0
+
+#variable for encrypted message
+newMessage = ""
+message = input("Enter original message: ")
+key = int(input("Enter the number of shifts: "))
+
+for character in message:
+    if character in alphabet:
+        #find location and returns number index/position
+        location = alphabet.find(character)
+        #new location for encrypted letter
+        newLocation = (location + key) % 26
+        #gets the encyrpted letter
+        newCharacter = alphabet[newLocation]
+        #add the new character to newMessage
+        newMessage += newCharacter
     else:
-        if s[i].isupper():
-            new = ord(s[i]) + n
-            while new > 90:
-                new -= 26
-        else:
-            new = ord(s[i]) + n
-            while new > 122:
-                new -= 26
-    s[i] = chr(new)
-print("Below is your cypher text!\n")
-time.sleep (.5)
-print("".join(s))
-print("\n")
+        #adds the character as is, example ! space ? #
+        newMessage += character
+
+print("Your encrypted message is: " + newMessage)
+time.sleep (.2)
+print("Your output will also be available in the 'Output' folder in the root of this project.")
+os.system('cd . && cd Output && echo' + newMessage + '> Caesar_Encryption_Output.txt')

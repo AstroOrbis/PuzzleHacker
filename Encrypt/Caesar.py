@@ -2,8 +2,9 @@
 import time
 import os
 
+
 #the original alphabet
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet = "abcdefghijklmnopqrstuvwxyz01234556789"
 #number of shifts
 key = 0
 

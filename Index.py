@@ -23,5 +23,5 @@ if EncryptDecrypt == "Encrypt":
 elif EncryptDecrypt == "Decrypt":
     import Decrypt
 else:
-    print("Invalid awnser - restarting the script.")
+    print("Invalid answer - restarting the script.")
     os.system('python3 Index.py')

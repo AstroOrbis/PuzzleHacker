@@ -11,7 +11,7 @@ print(" ")
 #Selection screen
 print("Choose the string that corresponds to the puzzle you want to solve!")
 time.sleep(.5)
-print("Caesarian Cypher (Caesar)")
+print("Caesarean Cypher (Caesar)")
 time.sleep(4)
 
 #Set var PuzzleType

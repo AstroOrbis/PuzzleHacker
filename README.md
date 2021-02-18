@@ -10,9 +10,10 @@ os (pip3 install os)
 
 # Usage
 
-Copy-paste this into your terminal prompt.
+
+Using terminal:
 
 MacOS/Linux:
-`pip3 install os && git clone https://github.com/AstroOrbis/PuzzleHacker && cd PuzzleHacker && python3 main.py`
+`cd ~/Desktop && pip3 install os && git clone https://github.com/AstroOrbis/PuzzleHacker && cd PuzzleHacker && python3 main.py`
 
 Windows: Still figuring out!
